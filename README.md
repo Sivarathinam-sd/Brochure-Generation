@@ -1,7 +1,7 @@
 # Brochure-Generation
 This project focuses on generating brochure-ready marketing content for a company by scraping its website and using a large language model to synthesize and rewrite the content in polished Markdown format.
 
-<img src='hero-img.png' >
+<img src='hero-banner.png' >
 
 ## Features
 * Scrapes a company website and extracts all links
@@ -35,3 +35,32 @@ This project focuses on generating brochure-ready marketing content for a compan
      - Mission / Brand Promise  
      - Call to Action  
    - Outputs clean, valid Markdown suitable for direct use.
+  
+## Prerequisites
+* Python 3.9 or higher  - https://www.python.org
+* Groq API key  - https://groq.com
+    
+## Installation
+
+
+* Step 1: Clone the repository 
+  * ```
+    git clone https://github.com/Sivarathinam-sd/Brochure-Generation.git
+    cd Brochure-Generation
+    
+* Step 2: Create and activate a virtual environment
+  * ```
+    python -m venv venv
+  
+  * For Mac ```source venv/bin/activate``` | For windows ```venv/Scripts/activate```
+* Step 3: Install dependencies
+  * ```
+    pip install -r requirements.txt
+* Step 4: Set up the API Key
+  * Create a .env file in the root directory
+  * Add the following line
+    ```
+    GROQ_API_KEY="your api key"
+* Step 5: Run the Project
+  * Open the file ```brochureGeneration.ipynb```
+  * Run the cells sequentially and enter the websiter URL when prompter to execute the web scraping and brochure generation.
